@@ -1,0 +1,35 @@
+{
+  "name": "overview-db-liam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-dev": "webpack --config ./webpack.config.js --mode development -w",
+    "start": "nodemon ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamGenesect-SDC/Overview-DB-Liam.git"
+  },
+  "author": "Liam Macfarlane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeamGenesect-SDC/Overview-DB-Liam/issues"
+  },
+  "homepage": "https://github.com/TeamGenesect-SDC/Overview-DB-Liam#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.2",
+    "pg": "^8.7.1",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "babel-loader": "^8.2.3",
+    "babel-preset-react-app": "^10.0.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
