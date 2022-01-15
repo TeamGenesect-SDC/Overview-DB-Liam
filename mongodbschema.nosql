@@ -1,0 +1,67 @@
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/fetcher');
+
+let productsSchema = mongoose.Schema({
+  product_id: Number,
+  name: String,
+  slogan: String,
+  category: String,
+  features: {
+    name: String,
+    value: String,
+  },
+  styles: {
+    name: String,
+    original_price: Number,
+    sale_price: Number,
+    defailt: Boolean
+    photos: {
+      thumbnail_url: String,
+      url: String
+    },
+    skus: {
+      quantity: Number,
+      size: String
+    },
+  },
+  related: String,
+  description: {
+    type: String,
+    unique: true}
+});
+
+// let Repo = mongoose.model('Repo', productsSchema);
+
+// let save = (responseObject) => {
+
+//     var repos = responseObject.data;
+//     repos.forEach(object => {
+//       var repoObj = {};
+//       repoObj.Owner = object.owner.login;
+//       repoObj.url = object.url;
+//       repoObj.name = object.name;
+//       repoObj.forks = object.forks;
+//       repoObj.description = object.description;
+
+//       var repo = new Repo(repoObj);
+
+//       repo.save(function (err) {
+//         if (err) {
+//          console.log('ERROR:', err)
+//         } else {
+//           console.log('SAVED')
+//         }
+//       })
+//     })
+
+//   }
+//   //need to pass the organizer functions results to the get call
+//   var repoFinder = function(callback) {
+//     Repo.find({}).sort({'forks': 1}).limit(25).then((data) => {
+//       callback(data);
+//     });
+//   }
+
+
+// module.exports.save = save
+// module.exports.repoFinder = repoFinder;
