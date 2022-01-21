@@ -1,10 +1,11 @@
 const {Pool} = require('pg');
+const Pass = require('../config.js')
 
 const pool = new Pool({
   host: "localhost",
   user: "liamcoding",
   port: 5432,
-  password: 'password',
+  password: Pass,
   database: "sdc_overview_db"
 });
 
