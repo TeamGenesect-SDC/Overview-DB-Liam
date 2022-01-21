@@ -2,11 +2,11 @@ const {Pool} = require('pg');
 const Pass = require('../config.js')
 
 const pool = new Pool({
-  host: "localhost",
-  user: "liamcoding",
+  host: "ec2-3-82-232-212.compute-1.amazonaws.com",
+  user: "liam2",
   port: 5432,
   password: Pass,
-  database: "sdc_overview_db"
+  database: "postgres"
 });
 
 pool.connect((err) => {
