@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./frontend/src/index.js":
-/*!*******************************!*\
-  !*** ./frontend/src/index.js ***!
-  \*******************************/
+/***/ "./client/dist/index.js":
+/*!******************************!*\
+  !*** ./client/dist/index.js ***!
+  \******************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://overview-db-liam/./frontend/src/index.js?");
+eval("\n\n//# sourceURL=webpack://overview-db-liam/./client/dist/index.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("\n\n//# sourceURL=webpack://overview-db-liam/./frontend/src/index.js?");
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./frontend/src/index.js"]();
+/******/ 	__webpack_modules__["./client/dist/index.js"]();
 /******/ 	
 /******/ })()
 ;

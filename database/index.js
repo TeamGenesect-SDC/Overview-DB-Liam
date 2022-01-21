@@ -25,4 +25,4 @@ pool.connect((err) => {
 //     pool.end
 // })
 
-module.exports.pool - pool
+module.exports = pool
