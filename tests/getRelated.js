@@ -12,6 +12,6 @@ export const options = {
 export default function () {
   const randomProduct = (Math.random() * 1000011).toFixed(0);
 
-  http.get(`http://localhost:3000/products/${randomProduct}/related`);
+  http.get(`http://18.233.153.135/products/${randomProduct}/related`);
   sleep(1);
 }

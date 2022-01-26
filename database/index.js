@@ -17,13 +17,6 @@ pool.connect((err) => {
   return;
 });
 
-// pool.query(`SELECT * FROM Products limit 10`, (err, res) => {
-//     if(!err){
-//       console.log(res.rows);
-//     } else {
-//       console.log(err.message);
-//     }
-//     pool.end
-// })
+
 
 module.exports = pool
